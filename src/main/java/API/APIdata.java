@@ -70,6 +70,15 @@ public class APIdata {
 	}
 
 
+public String GetCountryInfo() throws JSONException {
+		APIdata ap=new APIdata();
+		JSONObject js=ap.getJSO();
+		String Name = (String) js.get("name");
+		String Capital=(String) js.get("capital");
 
+		String CountryInfo = " Country Name is " + Name + " and It's Capital is " + Capital ;
+
+		return CountryInfo;
+	}
 
 }
