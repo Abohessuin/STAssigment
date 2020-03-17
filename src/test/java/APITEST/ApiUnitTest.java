@@ -78,13 +78,20 @@ public class ApiUnitTest {
 		assertEquals("Colombian peso", apicurrinfo.get("name"));
 
 	}
+
 	@Test
 	public void CountryInfoTest() throws JSONException {
 
 		assertEquals(" Country Name is Colombia and It's Capital is BogotÃ¡", jsdata.GetCountryInfo());
 
+
 	} 
 	
-      
+      @Test
+      public void CountryLocationTest() throws JSONException {
+
+        assertEquals(" Country Reigon is Americas and It's SubReigon is South America", jsdata.GetCountryLocation());
+
+    }
 
 }
