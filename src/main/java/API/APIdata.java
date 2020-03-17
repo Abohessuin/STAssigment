@@ -56,6 +56,18 @@ public class APIdata {
 	public JSONObject getCurrncyInfo() {
 		return currncyInfo;
 	}
+	public String GetCountryLocation() throws JSONException {
+
+		APIdata ap=new APIdata();
+		JSONObject js=ap.getJSO();
+		String Reigon =(String) js.get("region");
+
+		String SubReigon= (String) js.get("subregion");
+
+		String Location = " Country Reigon is " + Reigon + " and It's SubReigon is " + SubReigon ;
+
+		return Location;
+	}
 
 
 
