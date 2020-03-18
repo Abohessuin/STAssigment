@@ -16,7 +16,14 @@ public class ApiIntegrationTest {
 		assertEquals(" Country's Currencies Name is Colombian peso of Code COP and It's Symbol is $", jsdata.GetCountryCurrenciesInfo());
 
 	}
+	
+       @Test
+       public void CountryInfoTest() throws JSONException {
 
+                assertEquals(" Country Name is Colombia and It's Capital is BogotÃ¡", jsdata.GetCountryInfo());
+
+
+    }
 }
 
 
