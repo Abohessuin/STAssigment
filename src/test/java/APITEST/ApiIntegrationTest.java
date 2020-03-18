@@ -25,7 +25,16 @@ public class ApiIntegrationTest {
 
     }
 
+   
+     
+        @Test
+    public void CountryInfoTest() throws JSONException {
+
+        assertEquals(" Country Name is Colombia and It's Capital is BogotÃ¡", jsdata.GetCountryInfo());
+
+
     }
+
 }
 
 
