@@ -17,6 +17,7 @@ public class ApiIntegrationTest {
 
 	}
 	
+
 	 @Test
       public void CountryLocationTest() throws JSONException {
 
@@ -24,6 +25,7 @@ public class ApiIntegrationTest {
 
     }
 
+    }
 }
 
 
