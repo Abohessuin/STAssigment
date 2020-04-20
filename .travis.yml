@@ -1,0 +1,13 @@
+language:
+  java
+jdk:
+  -openjdk8
+
+jobs:
+  include:
+    - stage: "Tests"                # naming the Tests stage
+      name: "API Unit Tests"            # names the first Tests stage job
+      script: ./ApiUnitTest
+    - script: ./ApiItegrationTes
+      name: " API Integration Tests"     # names the second Tests stage job
+
