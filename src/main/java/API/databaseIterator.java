@@ -9,7 +9,7 @@ import java.io.ObjectInputStream;
 public class databaseIterator implements Iterator {
 
 
-
+/*
 	   private String filepath;
 
 	    private FileInputStream fis;
@@ -179,7 +179,7 @@ public class databaseIterator implements Iterator {
 
 		}
 
-		
+	*/	
 
 
 
