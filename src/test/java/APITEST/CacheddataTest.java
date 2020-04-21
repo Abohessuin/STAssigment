@@ -28,9 +28,9 @@ public class CacheddataTest {
 		sp.getdata();
 		assertFalse(sp.isEstablishconnectionwithapi());
 	}
-	*/
 	
-	/*
+	
+	
 	@Test
 	public void checkgetdata() {
 		GetData  dt=new GetData("france");
@@ -60,7 +60,7 @@ public class CacheddataTest {
 		
 	}
 
-	
+	/*
 	@Test
 	public void checkdataincache() {
 		GetData  dt=new GetData("spain");
@@ -70,7 +70,7 @@ public class CacheddataTest {
 		Mockito.doReturn(false).when(db).checkExistence(cd);
 		assertFalse(dt.checkdataincach());
 	}
-	
+	*/
 	
 
 
