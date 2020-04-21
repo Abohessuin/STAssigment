@@ -25,6 +25,39 @@ public class CacheddataTest {
 		
 		
 	}
+         /*@Test
+    public void checkgetdata() {
+        GetData  dt=new GetData("Egypt");
+        GetData sp=Mockito.spy(dt);
+        Mockito.doReturn(true).when(sp).checkdataincach();
+        cacheddatabase db=Mockito.mock(cacheddatabase.class);
+        //CachedDate cd=Mockito.mock(CachedDate.class);
+        CachedDate cd=new CachedDate("","");
+        CachedDate c=Mockito.mock(CachedDate.class);
+        Mockito.doReturn(c).when(db).getdata(cd);
+        Mockito.doReturn("").when(c).getJSO();
+        sp.getdata();
+        assertFalse(sp.isEstablishconnectionwithapi());
+    }
+
+
+
+    @Test
+    public void checkgetdata() {
+        GetData  dt=new GetData("france");
+        GetData sp=Mockito.spy(dt);
+        Mockito.doReturn(false).when(sp).checkdataincach();
+        cacheddatabase db=Mockito.mock(cacheddatabase.class);
+        //CachedDate cd=Mockito.mock(CachedDate.class);
+        CachedDate cd=new CachedDate("","");
+        CachedDate c=Mockito.mock(CachedDate.class);
+        Mockito.doReturn(c).when(db).getdata(cd);
+        Mockito.doReturn("").when(c).getJSO();
+        sp.getdata();
+        assertTrue(sp.isEstablishconnectionwithapi());
+    }
+
+*/
 
 	/*
 	@Test
