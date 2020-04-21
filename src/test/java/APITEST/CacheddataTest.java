@@ -30,7 +30,7 @@ public class CacheddataTest {
 	}
 	*/
 	
-	
+	/*
 	@Test
 	public void checkgetdata() {
 		GetData  dt=new GetData("france");
@@ -46,7 +46,7 @@ public class CacheddataTest {
 		assertTrue(sp.isEstablishconnectionwithapi());
 	}
 	
-
+*/
 
 	
 	@Test	
