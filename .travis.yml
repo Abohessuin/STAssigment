@@ -7,7 +7,8 @@ jobs:
   include:
     - stage: "Tests"                # naming the Tests stage
       name: "API Unit Tests"            # names the first Tests stage job
-      script: ./ApiUnitTest
-    - script: ./ApiItegrationTes
+    - script:
+        mvn clean test -Dtest=APITEST.ApiUnitTest
       name: " API Integration Tests"     # names the second Tests stage job
-
+    - script:
+       mvn clean test -Dtest=APITEST.ApiIntegrationTest
