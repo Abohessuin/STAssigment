@@ -25,6 +25,34 @@ public class CacheddataTest {
 		
 		
 	}
+	
+	@Test	
+	public void checkgetdata5() {
+		GetData  dt=new GetData("france");
+		dt.getdata();
+		String sb=dt.getData();
+		String js=sb.substring(1, sb.length()-1);
+		JSONObject j=new JSONObject(js);
+		String Actual=j.getString("name");
+		String Expected="France";
+		assertEquals(Expected, Actual);
+		
+		
+	}
+	
+	@Test	
+	public void checkgetdata6() {
+		GetData  dt=new GetData("france");
+		dt.getdata();
+		String sb=dt.getData();
+		String js=sb.substring(1, sb.length()-1);
+		JSONObject j=new JSONObject(js);
+		String Actual=j.getString("capital");
+		String Expected="Paris";
+		assertEquals(Expected, Actual);
+		
+		
+	}
          /*@Test
     public void checkgetdata() {
         GetData  dt=new GetData("Egypt");
