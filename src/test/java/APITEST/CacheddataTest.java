@@ -1,10 +1,10 @@
 package APITEST;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-
-
+import org.json.JSONObject;
 import org.junit.Test;
 
 
@@ -22,6 +22,33 @@ public class CacheddataTest {
 		assertTrue(dt.isEstablishconnectionwithapi());
 		dt.getdata();
 		assertFalse(dt.isEstablishconnectionwithapi());
+		
+		
+	}
+	@Test	
+	public void checkgetdata5() {
+		GetData  dt=new GetData("france");
+		dt.getdata();
+		String sb=dt.getData();
+		String js=sb.substring(1, sb.length()-1);
+		JSONObject j=new JSONObject(js);
+		String Actual=j.getString("name");
+		String Expected="France";
+		assertEquals(Expected, Actual);
+		
+		
+	}
+	
+	@Test	
+	public void checkgetdata6() {
+		GetData  dt=new GetData("france");
+		dt.getdata();
+		String sb=dt.getData();
+		String js=sb.substring(1, sb.length()-1);
+		JSONObject j=new JSONObject(js);
+		String Actual=j.getString("capital");
+		String Expected="Paris";
+		assertEquals(Expected, Actual);
 		
 		
 	}
